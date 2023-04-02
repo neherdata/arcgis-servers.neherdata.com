@@ -9,7 +9,7 @@
    
     <!-- INCLUDING JQUERY-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js" integrity="sha512-ml/QKfG3+Yes6TwOzQb7aCNtJF4PUyha6R3w8pSTo/VJSywl7ZreYvvtUso7fKevpsI+pYVVwnu82YO0q3V6eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
     
     h1 {
@@ -29,10 +29,12 @@
       font-style: normal;
       text-align: start;
     }
-    iframe {
+    a {
+      font-family: "Lucida Console", Courier, monospace;
+      font-style: normal;
+      text-align: center;
       display: block;
-      margin-right: auto;
-      margin-left: auto;
+      
     }
     </style>
     
@@ -42,8 +44,15 @@
   
     <h1>Neher Data Systems</h1>
     <h2>ArcGIS Server List</h2>
-    <p align="center"><iframe src="https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf" width="90%" height="500px">
-    </iframe></p>
+    
+    <embed
+	src="https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf"
+	type="application/pdf"
+	width="100%"
+	height="90%"
+/>
+</ br>
+    <a id="link" href="https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf">Download PDF</a>
     
   </body>
 </html>
